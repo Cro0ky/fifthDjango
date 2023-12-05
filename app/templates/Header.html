@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+    {% block header %}
+        <div class='logo'>
+        <img src="{% static "images/logo.jpg" %}"/>
+            <div class='info'>
+                <img src="{% static "images/google.jpg" %}" class='photo'/>
+                <img src="{% static "images/instagram.jpg" %}" class='photo'/>
+                <img src="{% static "images/invision.jpg" %}" class='photo'/>
+            </div>
+            <div class='container'>
+                <div class='menu'><p>О нас</p></div>
+                <div class='menu2'><p>Услуги</p>
+                <p>Специалисты</p>
+                <p>Пациентам</p>
+                <p>Контакты</p></div>
+            </div>
+            <div class='addres'>
+                <img src="{% static "images/location_outline.jpg" %}"/>
+            </div>
+            <div class='menu3'>
+                <p>Чебоксары,Энтузиастов 1А</p>
+            </div>
+        </div>
+    {% endblock header%}
+
+    {% block content %}
+        <div class='main'>
+            <div class='container'>
+                <div class='main__wrap' >
+                    <div class='main__textblock'>
+
+                        <h2 class='main__pretitle'>— Стоматология в Чебоксарах</h2>
+                        <h1 class='main__title'>Лечение зубов в тот же день</h1>
+                        <h2 class='main__subtitle'>Мы проведем полную консультацию, профессиональную гигиену полости рта, 
+                            лечение зубов и десен
+                        </h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class='blocks'>
+        <div class='container'>
+            <div class='block__wrap'>
+                <div class='blocks__box'>
+                <div class='blocks__block blocks__block_b'>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title blocks__title_w'>Лечение зубов</p>
+                    
+                    <div class='blocks__list'> 
+                        <p class='blocks__arrow'>^</p>
+                    </div>
+                </div>
+            
+                <div class='blocks__block '>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Гигиена</p>
+                </div>
+                <div class='blocks__block blocks__block_g'>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Брекеты</p>
+                </div>
+                <div class='blocks__block blocks__block_g'>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Детская стоматология</p>
+                </div>
+                <div class='blocks__block '>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Лечение зубов</p>
+                </div>
+                <div class='blocks__block '>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Лечение зубов</p>
+                </div>
+                <div class='blocks__block '>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Лечение зубов</p>
+                </div>
+                <div class='blocks__block '>
+                    <img class='blocks_pic'/>
+                    <p class='blocks__title'>Лечение зубов</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='advert'>
+        <div class='container'>
+            <div class'advert__wrap'>
+                <div class='advert__all_text'>
+                    <h1 class='advert__title'>При фиксации брекетов на обе челюсти получи сертификат на 7000 рублей</h1>
+                    <p class='advert__text'>Укажите вой номер телефона, мы перезвоним и подберем для вас удобное время приёма.<br>
+                        Или позвоните нам сами — <span><p class='blue'>+7 900 333 10 40</p> <span></p>
+                    <div class='advert__input_block'>
+                        <input type='text'  placeholder='Телефон' class='advert__input' />
+
+                        <div class='advert__btn_block'>
+                            <a class='advert__btn_text'>Записаться на прием</a>
+                        </div>
+
+                    </div>
+                    <p class='advert__after_input'>Записываясь на услугу вы даёте согласие на<span> <p class='underline'>обработку своих персональных данных</p><span></p>
+
+                </div>
+            </div>
+            <img class='woman' src="{% static "images/woman.png" %}" />
+        </div>
+    </div>
+    {% endblock content %}
+       
+        
+    {% block footer%}
+        <footer class='footer'>
+            <div class='footer__wrap'>
+                <div class='footer__btns-block'>
+                    <div class='footer__btn'>
+                        <a href=#>
+                            <img src="{% static "images/google.jpg" %}" class='photo'/>
+                        </a>
+                    </div>
+                    <div class='footer__btn'>
+                        <a href=#>
+                            <img src="{% static "images/instagram.jpg" %}" class='photo'/>
+                        </a>
+                    </div>
+                    <div class='footer__btn'>
+                        <a href=#>
+                            <img src="{% static "images/invision.jpg" %}" class='photo'/>
+                        </a>
+                    </div>
+    
+                </div>
+    
+                <p class='footer__text'>ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2099
+                    © 2018-2021
+                </p>
+    
+                <p class='footer_p'>Политика в отношении обработки персональных данных</p>
+            
+                <div class='logotype'>
+                    <img src="{% static "images/logo.jpg" %}"/>
+                </div>
+            </div>
+            
+        </footer>
+    {% endblock footer%}
+
+    </body>
+</html>
